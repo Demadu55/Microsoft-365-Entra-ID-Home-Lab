@@ -25,6 +25,32 @@ The on-prem AD lab (Lab 1) has a structural limitation: a device has to physical
 
 In a real hybrid deployment, **Microsoft Entra Connect** syncs on-prem AD accounts to Entra ID and enables single sign-on, so a user's DC01 login and their Entra ID login become one and the same. This lab intentionally didn't provision Entra Connect (it requires a domain-joined sync server, more infrastructure than the identity concepts themselves need) but the environments are understood and structured to support that bridge later.
 
+## Screenshots
+
+**Users and groups**
+![Users and groups](Users_and_Groups.png)
+
+**Security groups**
+![Security groups](Entra_Security_Groups.png)
+
+**Entra ID P2 trial activated**
+![Entra ID P2 trial activated](activating_entra_ID%20P2.png)
+
+**Licenses assigned to test users**
+![Licenses assigned](Licenses.png)
+
+**Conditional Access policy creation**
+![Conditional Access policy creation](Conditional_Access_Policy_Creation.png)
+
+**Conditional Access policy — report-only**
+![Conditional Access policy report-only](Conditional_Access_policy%20Report.png)
+
+**RBAC — delegated role**
+![RBAC delegated role](RBAC_delegated_role.png)
+
+**Custom domain verified**
+![Custom domain verified](Domain_verified.png)
+
 ## Conditional Access policy design notes
 
 - Scoped to **IT-Staff only**, not "All users" — MFA friction is applied where the business risk (access to more sensitive systems) justifies it, rather than a blanket rule.
@@ -46,14 +72,3 @@ In a real hybrid deployment, **Microsoft Entra Connect** syncs on-prem AD accoun
 ## Skills demonstrated
 
 Microsoft Entra ID administration, Conditional Access policy design, RBAC / least-privilege delegation, custom domain verification, cloud identity licensing, and articulating the architectural relationship between on-prem AD and cloud identity.
-
-## Screenshots
-
-*(Add your screenshots here, e.g.:)*
-
-`![Users and groups](screenshots/01-users-groups.png)`
-`![Entra ID P2 trial activated](screenshots/02-p2-trial.png)`
-`![Conditional Access policy created](screenshots/03-ca-policy.png)`
-`![Conditional Access policy report-only](screenshots/04-ca-report-only.png)`
-`![RBAC - User Administrator assigned](screenshots/05-rbac.png)`
-`![Custom domain verified](screenshots/06-domain-verified.png)`
